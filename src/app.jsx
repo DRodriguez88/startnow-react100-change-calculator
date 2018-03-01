@@ -37,29 +37,49 @@ class App extends Component {
                 <div className="alert alert-success text-center">
                   The total change due is a gillion dollhairs
                 </div>
-                <div id="dollarsRow" className="row">
+                <div id="dollarsRow" className="row mb-3">
                   <div className="col-3">
                     <div id="twenties" className="card bg-light text-center w-100">
-                      20
+                      <p className="mt-3 font-weight-bold">Twenties</p>
                     </div>
                   </div>
                   <div className="col-3">
                     <div id="tens" className="card bg-light text-center">
-                      10
+                      <p className="mt-3 font-weight-bold">Tens</p>
                     </div>
                   </div>
                   <div className="col-3">
                     <div id="fives" className="card bg-light text-center">
-                      5
+                      <p className="mt-3 font-weight-bold">Fives</p>
                     </div>
                   </div>
                   <div className="col-3">
                     <div id="ones" className="card bg-light text-center">
-                      1
+                      <p className="mt-3 font-weight-bold">Ones</p>
                     </div>
                   </div>
                 </div>
                 <div id="coinsRow" className="row">
+                  <div className="col-3">
+                    <div id="quarters" className="card bg-light text-center w-100">
+                      <p className="mt-3 font-weight-bold">Quarters</p>
+                    </div>
+                  </div>
+                  <div className="col-3">
+                    <div id="dimes" className="card bg-light text-center w-100">
+                      <p className="mt-3 font-weight-bold">Dimes</p>
+                    </div>
+                  </div>
+                  <div className="col-3">
+                    <div id="nickels" className="card bg-light text-center w-100">
+                      <p className="mt-3 font-weight-bold">Nickels</p>
+                    </div>
+                  </div>
+                  <div className="col-3">
+                    <div id="pennies" className="card bg-light text-center w-100">
+                     <p className="mt-3 font-weight-bold">Pennies</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

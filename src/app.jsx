@@ -39,45 +39,53 @@ class App extends Component {
                 </div>
                 <div id="dollarsRow" className="row mb-3">
                   <div className="col-3">
-                    <div id="twenties" className="card bg-light text-center w-100">
+                    <div className="card bg-light text-center">
                       <p className="mt-3 font-weight-bold">Twenties</p>
+                      <p id="twenties">0</p>
                     </div>
                   </div>
                   <div className="col-3">
-                    <div id="tens" className="card bg-light text-center">
+                    <div className="card bg-light text-center">
                       <p className="mt-3 font-weight-bold">Tens</p>
+                      <p id="tens">0</p>
                     </div>
                   </div>
                   <div className="col-3">
-                    <div id="fives" className="card bg-light text-center">
+                    <div className="card bg-light text-center">
                       <p className="mt-3 font-weight-bold">Fives</p>
+                      <p id="fives">0</p>
                     </div>
                   </div>
                   <div className="col-3">
-                    <div id="ones" className="card bg-light text-center">
+                    <div className="card bg-light text-center">
                       <p className="mt-3 font-weight-bold">Ones</p>
+                      <p id="ones">0</p>
                     </div>
                   </div>
                 </div>
                 <div id="coinsRow" className="row">
                   <div className="col-3">
-                    <div id="quarters" className="card bg-light text-center w-100">
+                    <div className="card bg-light text-center w-100">
                       <p className="mt-3 font-weight-bold">Quarters</p>
+                      <p id="quarters">0</p>
                     </div>
                   </div>
                   <div className="col-3">
-                    <div id="dimes" className="card bg-light text-center w-100">
+                    <div className="card bg-light text-center w-100">
                       <p className="mt-3 font-weight-bold">Dimes</p>
+                      <p id="dimes">0</p>
                     </div>
                   </div>
                   <div className="col-3">
-                    <div id="nickels" className="card bg-light text-center w-100">
+                    <div className="card bg-light text-center w-100">
                       <p className="mt-3 font-weight-bold">Nickels</p>
+                      <p id="nickels">0</p>
                     </div>
                   </div>
                   <div className="col-3">
-                    <div id="pennies" className="card bg-light text-center w-100">
+                    <div className="card bg-light text-center w-100">
                      <p className="mt-3 font-weight-bold">Pennies</p>
+                     <p id="pennies">0</p>
                     </div>
                   </div>
                 </div>

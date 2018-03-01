@@ -3,7 +3,32 @@ import React, { Component } from 'react';
 class App extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      inputRec: 0,
+      inputDue: 0,
+      totalChange: 0,
+      twenties: 0,
+      tens: 0,
+      fives: 0,
+      ones: 0,
+      quarters: 0,
+      dimes: 0,
+      nickels: 0,
+      pennies: 0,
+    }
+    this.handleChange = this.handleChange.bind(this)
   }
+
+  handleChange(e){
+    this.setState({ 
+      [e.target.name]: e.target.value
+    }, () => console.log(this.state))
+  }
+
+  handleClick(e){
+
+  }
+
 
   render() {
     return (
@@ -21,12 +46,12 @@ class App extends Component {
               </div>
               <div className="card-body">
                 <p className="font-weight-bold">How much is due?</p>
-                <input id="due" className="form-control"/>
+                <input name="inputDue" defaultValue="0" onChange={this.handleChange} className="form-control"/>
                 <p className="font-weight-bold">How much was received?</p>
-                <input id="received" className="form-control"/>
+                <input name="inputRec" defaultValue="0" onChange={this.handleChange} className="form-control"/>
               </div>
               <div className="card-footer">
-                <button className="btn btn-primary btn-lg btn-block">Calculate</button>
+                <button onClick={this.handleClick} className="btn btn-primary btn-lg btn-block">Calculate</button>
               </div>
             </div>
           </div>

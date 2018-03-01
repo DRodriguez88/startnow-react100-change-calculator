@@ -16,7 +16,8 @@ class App extends Component {
       nickels: 0,
       pennies: 0,
     }
-    this.handleChange = this.handleChange.bind(this)
+    this.handleChange = this.handleChange.bind(this);
+    this.handleClick = this.handleClick.bind(this)
   }
 
   handleChange(e){
@@ -26,7 +27,7 @@ class App extends Component {
   }
 
   handleClick(e){
-
+    console.log(this.state)
   }
 
 

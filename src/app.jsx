@@ -33,6 +33,35 @@ class App extends Component {
 
           <div className="col-sm-8">
             <div className="card">
+              <div className="card-body">
+                <div className="alert alert-success text-center">
+                  The total change due is a gillion dollhairs
+                </div>
+                <div id="dollarsRow" className="row">
+                  <div className="col-3">
+                    <div id="twenties" className="card bg-light text-center w-100">
+                      20
+                    </div>
+                  </div>
+                  <div className="col-3">
+                    <div id="tens" className="card bg-light text-center">
+                      10
+                    </div>
+                  </div>
+                  <div className="col-3">
+                    <div id="fives" className="card bg-light text-center">
+                      5
+                    </div>
+                  </div>
+                  <div className="col-3">
+                    <div id="ones" className="card bg-light text-center">
+                      1
+                    </div>
+                  </div>
+                </div>
+                <div id="coinsRow" className="row">
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@ class App extends Component {
           <hr className="border-white"></hr>
         </div>
 
-        <div className="p-2">
+        <div className="row ml-2">
           <div className="col-sm-4">
             <div className="card">
               <div className="card-header">
@@ -29,7 +29,7 @@ class App extends Component {
                 <button className="btn btn-primary btn-lg btn-block">Calculate</button>
               </div>
             </div>
-          </div>   
+          </div>
         </div>
 
       </div>

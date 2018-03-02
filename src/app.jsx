@@ -95,25 +95,25 @@ class App extends Component {
                   <div className="col-3">
                     <div className="card bg-light text-center">
                       <p className="mt-3 font-weight-bold">Twenties</p>
-                      <p id="twenties">{this.state.twenties}</p>
+                      <p className="output" id="twenties">{this.state.twenties}</p>
                     </div>
                   </div>
                   <div className="col-3">
                     <div className="card bg-light text-center">
                       <p className="mt-3 font-weight-bold">Tens</p>
-                      <p id="tens">{this.state.tens}</p>
+                      <p className="output" id="tens">{this.state.tens}</p>
                     </div>
                   </div>
                   <div className="col-3">
                     <div className="card bg-light text-center">
                       <p className="mt-3 font-weight-bold">Fives</p>
-                      <p id="fives">{this.state.fives}</p>
+                      <p className="output" id="fives">{this.state.fives}</p>
                     </div>
                   </div>
                   <div className="col-3">
                     <div className="card bg-light text-center">
                       <p className="mt-3 font-weight-bold">Ones</p>
-                      <p id="ones">{this.state.ones}</p>
+                      <p className="output" id="ones">{this.state.ones}</p>
                     </div>
                   </div>
                 </div>
@@ -121,25 +121,25 @@ class App extends Component {
                   <div className="col-3">
                     <div className="card bg-light text-center w-100">
                       <p className="mt-3 font-weight-bold">Quarters</p>
-                      <p id="quarters">{this.state.quarters}</p>
+                      <p className="output" id="quarters">{this.state.quarters}</p>
                     </div>
                   </div>
                   <div className="col-3">
                     <div className="card bg-light text-center w-100">
                       <p className="mt-3 font-weight-bold">Dimes</p>
-                      <p id="dimes">{this.state.dimes}</p>
+                      <p className="output" id="dimes">{this.state.dimes}</p>
                     </div>
                   </div>
                   <div className="col-3">
                     <div className="card bg-light text-center w-100">
                       <p className="mt-3 font-weight-bold">Nickels</p>
-                      <p id="nickels">{this.state.nickels}</p>
+                      <p className="output" id="nickels">{this.state.nickels}</p>
                     </div>
                   </div>
                   <div className="col-3">
                     <div className="card bg-light text-center w-100">
                      <p className="mt-3 font-weight-bold">Pennies</p>
-                     <p id="pennies">{this.state.pennies}</p>
+                     <p className="output" id="pennies">{this.state.pennies}</p>
                     </div>
                   </div>
                 </div>

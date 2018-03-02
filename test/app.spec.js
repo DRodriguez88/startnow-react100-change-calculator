@@ -77,14 +77,14 @@ describe('express', function() {
     .evaluate(() => Array.from(document.querySelectorAll('div.well > p.lead')).map(e => e.innerText))
     .then((results) => {
       const expected = {
-        twenties: '0',
-        tens: '0',
-        fives: '1',
-        ones: '1',
-        quarters: '3',
-        dimes: '2',
-        nickels: '0',
-        pennies: '4'
+        twenties: "0",
+        tens: "0",
+        fives: "1",
+        ones: "1",
+        quarters: "3",
+        dimes: "2",
+        nickels: "0",
+        pennies: "4"
       };
 
       const promises = Object

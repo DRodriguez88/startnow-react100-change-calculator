@@ -4,8 +4,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      inputRec: 0,
-      inputDue: 0,
+      amountReceived: 0,
+      amountDue: 0,
       totalChange: 0,
       twenties: 0,
       tens: 0,
@@ -27,7 +27,7 @@ class App extends Component {
   }
 
   handleClick(){
-    var totalChange = this.state.inputRec - this.state.inputDue;
+    var totalChange = this.state.amountReceived - this.state.amountDue;
     var leftOvers = totalChange;
     var twenties = Math.floor(leftOvers /20);
     leftOvers = leftOvers % 20;
@@ -55,6 +55,7 @@ class App extends Component {
       nickels: nickels,
       pennies: pennies,
     });
+    console.log(this.state)
   }
 
 
@@ -74,9 +75,9 @@ class App extends Component {
               </div>
               <div className="card-body">
                 <p className="font-weight-bold">How much is due?</p>
-                <input name="inputDue" defaultValue="0" onChange={this.handleChange} className="form-control"/>
+                <input name="amountDue" defaultValue="0" onChange={this.handleChange} className="form-control"/>
                 <p className="font-weight-bold">How much was received?</p>
-                <input name="inputRec" defaultValue="0" onChange={this.handleChange} className="form-control"/>
+                <input name="amountReceived" defaultValue="0" onChange={this.handleChange} className="form-control"/>
               </div>
               <div className="card-footer">
                 <button onClick={this.handleClick} className="btn btn-primary btn-lg btn-block">Calculate</button>

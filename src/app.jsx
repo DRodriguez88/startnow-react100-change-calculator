@@ -22,12 +22,39 @@ class App extends Component {
 
   handleChange(e){
     this.setState({ 
-      [e.target.name]: e.target.value
-    }, () => console.log(this.state))
+      [e.target.name]: e.target.value,
+    })
   }
 
-  handleClick(e){
-    console.log(this.state)
+  handleClick(){
+    var totalChange = this.state.inputRec - this.state.inputDue;
+    var leftOvers = totalChange;
+    var twenties = Math.floor(leftOvers /20);
+    leftOvers = leftOvers % 20;
+    var tens = Math.floor(leftOvers /10);
+    leftOvers = leftOvers % 10;
+    var fives = Math.floor(leftOvers /5);
+    leftOvers = leftOvers % 5;
+    var ones = Math.floor(leftOvers /1);
+    leftOvers = leftOvers % 1;
+    var quarters = Math.floor(leftOvers /.25);
+    leftOvers = leftOvers % .25;
+    var dimes = Math.floor(leftOvers /.1);
+    leftOvers = leftOvers % .1;
+    var nickels = Math.floor(leftOvers /.05);
+    leftOvers = leftOvers % .05;
+    var pennies = Math.round(leftOvers /.01);
+    this.setState({
+      totalChange: totalChange,
+      twenties: twenties,
+      tens: tens,
+      fives: fives,
+      ones: ones,
+      quarters: quarters,
+      dimes: dimes,
+      nickels: nickels,
+      pennies: pennies,
+    });
   }
 
 
@@ -61,31 +88,31 @@ class App extends Component {
             <div className="card">
               <div className="card-body">
                 <div className="alert alert-success text-center">
-                  The total change due is a gillion dollhairs
+                  The total change due is ${this.state.totalChange}
                 </div>
                 <div id="dollarsRow" className="row mb-3">
                   <div className="col-3">
                     <div className="card bg-light text-center">
                       <p className="mt-3 font-weight-bold">Twenties</p>
-                      <p id="twenties">0</p>
+                      <p id="twenties">{this.state.twenties}</p>
                     </div>
                   </div>
                   <div className="col-3">
                     <div className="card bg-light text-center">
                       <p className="mt-3 font-weight-bold">Tens</p>
-                      <p id="tens">0</p>
+                      <p id="tens">{this.state.tens}</p>
                     </div>
                   </div>
                   <div className="col-3">
                     <div className="card bg-light text-center">
                       <p className="mt-3 font-weight-bold">Fives</p>
-                      <p id="fives">0</p>
+                      <p id="fives">{this.state.fives}</p>
                     </div>
                   </div>
                   <div className="col-3">
                     <div className="card bg-light text-center">
                       <p className="mt-3 font-weight-bold">Ones</p>
-                      <p id="ones">0</p>
+                      <p id="ones">{this.state.ones}</p>
                     </div>
                   </div>
                 </div>
@@ -93,25 +120,25 @@ class App extends Component {
                   <div className="col-3">
                     <div className="card bg-light text-center w-100">
                       <p className="mt-3 font-weight-bold">Quarters</p>
-                      <p id="quarters">0</p>
+                      <p id="quarters">{this.state.quarters}</p>
                     </div>
                   </div>
                   <div className="col-3">
                     <div className="card bg-light text-center w-100">
                       <p className="mt-3 font-weight-bold">Dimes</p>
-                      <p id="dimes">0</p>
+                      <p id="dimes">{this.state.dimes}</p>
                     </div>
                   </div>
                   <div className="col-3">
                     <div className="card bg-light text-center w-100">
                       <p className="mt-3 font-weight-bold">Nickels</p>
-                      <p id="nickels">0</p>
+                      <p id="nickels">{this.state.nickels}</p>
                     </div>
                   </div>
                   <div className="col-3">
                     <div className="card bg-light text-center w-100">
                      <p className="mt-3 font-weight-bold">Pennies</p>
-                     <p id="pennies">0</p>
+                     <p id="pennies">{this.state.pennies}</p>
                     </div>
                   </div>
                 </div>
